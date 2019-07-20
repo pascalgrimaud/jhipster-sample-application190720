@@ -1,0 +1,10 @@
+entity Money {
+  count Integer,
+  name String
+}
+entity Purse {
+  name String
+}
+relationship OneToMany {
+  Purse{money} to Money{purse}
+}
